@@ -5,8 +5,8 @@
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About Me</a></li>
+                <li><a href="#">CV</a></li>
                 <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
             </ul></div>
         </div>
     </nav>

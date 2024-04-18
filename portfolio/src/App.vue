@@ -5,19 +5,24 @@
       <h1 class="welcome-text">Welcome to my portfolio</h1>
     </section>
     <AboutComponent />
-    <router-view />
+    <CvComponent />
+    <ProjectsComponent/>
   </div>
 </template>
 
 <script>
 import NavbarComponent from './components/NavbarComponent.vue'
 import AboutComponent from './components/AboutComponent.vue';
+import CvComponent from './components/CvComponent.vue'
+import ProjectsComponent from './components/ProjectsComponent.vue';
 
 export default {
   name: 'App',
   components: {
     NavbarComponent,
-    AboutComponent
+    AboutComponent,
+    CvComponent,
+    ProjectsComponent
   }
 }
 </script>
