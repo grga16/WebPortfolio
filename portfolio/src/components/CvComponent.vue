@@ -6,7 +6,7 @@
             <iframe class="iframe" src="https://www.youtube.com/embed/5aFo4PKm0G0" frameborder="0"></iframe>
             
         </section>
-        <div class="pdf-wrapper"><a href="../assets/cv.pdf" class="pdf-button" target="_blank">Download PDF</a></div>
+        <div class="pdf-wrapper"><a href="https://drive.google.com/file/d/1YQwe5WNjdW-p5dDTEonRb8EipkCG32yw/view?usp=sharing" class="pdf-button" target="_blank">Download PDF</a></div>
     </div>
 </template>
 
