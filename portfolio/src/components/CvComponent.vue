@@ -1,12 +1,12 @@
 <template>
-    <div class="video">
+    <div class="video" id="cv">
         <section class="video-wrapper">
             <div class="video-description"><h1 class="video-head">Video CV</h1>
             <div class="video-text">This is my video CV, a good way to get to know me a little it better in under 2 minutes</div></div>
             <iframe class="iframe" src="https://www.youtube.com/embed/5aFo4PKm0G0" frameborder="0"></iframe>
             
         </section>
-        <div class="pdf-wrapper"><button class="pdf-button">Download PDF</button></div>
+        <div class="pdf-wrapper"><a href="../assets/cv.pdf" class="pdf-button" target="_blank">Download PDF</a></div>
     </div>
 </template>
 
@@ -86,5 +86,31 @@ export default {
     border: black;
     width: 200px;
     height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 768px) {
+  .video-wrapper {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .iframe {
+    width: 90%; 
+    height: auto; 
+    margin-top: 20px;
+  }
+
+  .pdf-wrapper {
+    text-align: center; 
+  }
+
+  .video-head{
+    margin: 5%;
+  }
 }
 </style>

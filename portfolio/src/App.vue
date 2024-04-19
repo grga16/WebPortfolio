@@ -1,12 +1,13 @@
 <template>
   <div id="app">
     <NavbarComponent />
-    <section>
+    <section class="text-wrapper">
       <h1 class="welcome-text">Welcome to my portfolio</h1>
     </section>
     <AboutComponent />
     <CvComponent />
     <ProjectsComponent/>
+    <FooterComponent />
   </div>
 </template>
 
@@ -15,6 +16,7 @@ import NavbarComponent from './components/NavbarComponent.vue'
 import AboutComponent from './components/AboutComponent.vue';
 import CvComponent from './components/CvComponent.vue'
 import ProjectsComponent from './components/ProjectsComponent.vue';
+import FooterComponent from './components/FooterComponent.vue';
 
 export default {
   name: 'App',
@@ -22,7 +24,8 @@ export default {
     NavbarComponent,
     AboutComponent,
     CvComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    FooterComponent
   }
 }
 </script>
@@ -41,7 +44,8 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 100vw;
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,7 +56,7 @@ export default {
 body {
   margin: 0;
   width: 100vw;
-  background-color: rgb(14, 14, 14);
+  background-color: #0e0e0e;
   overflow-x: hidden;
 }
 
@@ -63,5 +67,17 @@ body {
   animation: fade-in 3s forwards ;
   margin-top: 40%;
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
+
+  .welcome-text{
+    font-size: 1.1rem;
+    max-width: 50%;
+  }
+  
 }
 </style>

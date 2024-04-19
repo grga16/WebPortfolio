@@ -1,6 +1,6 @@
 <template>
     <div class="about-wrapper">
-        <h1 class="about-head">About Me</h1>
+        <h1 class="about-head" id="about">About Me</h1>
         <section class="about">
             <img class="about-img" src="../assets/about.jpg" alt="">
             <div class="about-text">Hello my name is Grgur Ivic and I am student at EASV. I was born in Zagreb, Croatia and I moved to denmark to study multimedia design. Since high schools I was interested in that area and that is why I decided to continue my education in that direction. I am a creative and adventurous person. I love to travel a lot and meet new people and see different cultures. I’m also a big fan of sports and I have been playing football since I was 7 years old. Throughout my education I want to improve my skills in programming but also in designing. My goal is to improve my skills and become a multimedia designer after my studies. I need to start from somewhere so this portfolio is a small beginning of my journey. Here you can find my video CV as well as some of my projects.</div>
@@ -65,6 +65,26 @@ export default {
     display: flex;
     justify-content: flex-start;
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .about-wrapper {
+    margin-top: 10%; /* Reduce the top margin */
+  }
+
+  .about {
+    flex-direction: column; /* Stack the about items vertically */
+  }
+
+  .about-img {
+    width: 200px; /* Reduce the width of the image */
+    height: 300px; /* Reduce the height of the image */
+    margin-bottom: 15px;
+  }
+
+  .about-head{
+    width: 80%;
+  }
 }
 
 </style>
